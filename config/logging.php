@@ -36,15 +36,16 @@ return [
 
     'channels' => [
         'stack' => [
-            'driver' => 'stack',
-            'channels' => ['single'],
-        ],
-        'single' => [
-            'driver' => 'errorlog',
-            'level' => 'debug',
+            'driver'            => 'stack',
+            'channels'          => ['single', 'bugsnag'],
+            'ignore_exceptions' => false,
         ],
 
-      
+        'single' => [
+            'driver' => 'single',
+            'path'   => storage_path('logs/laravel.log'),
+            'level'  => 'debug',
+        ],
 
         'daily' => [
             'driver' => 'daily',
@@ -101,15 +102,3 @@ return [
     ],
 
 ];
-
-    'default' => env('LOG_CHANNEL', 'stack'),
-    'channels' => [
-        'stack' => [
-            'driver' => 'stack',
-            'channels' => ['single'],
-        ],
-        'single' => [
-            'driver' => 'errorlog',
-            'level' => 'debug',
-        ],
-…];
