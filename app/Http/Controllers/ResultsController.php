@@ -27,9 +27,12 @@ class ResultsController extends Controller
         $pdf = PDF::loadView('client.pdf', compact('result'));
         $pdf->save(storage_path($filename));
 
-        // auth()->user()->notify(new SendResultsPdfNotification($result));
-        File::delete(storage_path($filename));
+        // return response()->download()->file(storage_path($filename));
+        return response()->download(storage_path($filename));
 
-        return redirect()->route('client.results.show', $result->id)->withStatus('thanks');
+        // // auth()->user()->notify(new SendResultsPdfNotification($result));
+        // File::delete(storage_path($filename));
+
+        // return redirect()->route('client.results.show', $result->id)->withStatus('thanks');
     }
 }

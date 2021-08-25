@@ -33,9 +33,11 @@
                                 <input type="hidden" name="questions[{{ $question->id }}]" value="">
                                 @foreach($question->questionOptions as $option)
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="questions[{{ $question->id }}]" id="option-{{ $option->id }}" value="{{ $option->id }}"@if(old("questions.$question->id") == $option->id) checked @endif>
                                         <label class="form-check-label" for="option-{{ $option->id }}">
-                                            {{ $option->option_text }}
+                                           
+                                        <input class="form-check-input" type="radio" name="questions[{{ $question->id }}]" id="option-{{ $option->id }}" value="{{ $option->id }}"@if(old("questions.$question->id") == $option->id) checked @endif>
+                                        {{ $option->option_text }}
+                                        
                                         </label>
                                     </div>
                                 @endforeach
@@ -44,7 +46,7 @@
                                     <span style="margin-top: .25rem; font-size: 80%; color: #e3342f;" role="alert">
                                         <strong>{{ $errors->first("questions.$question->id") }}</strong>
                                     </span>
-                                @endif --}}
+                                @endif
                             </div>
                         </div>
                     @endforeach
@@ -65,4 +67,12 @@
         </div>
     </div>
 </div>
+<script>
+    window.onload=function(){
+        document.getElementById("option-2").checked = true;
+        document.getElementById("option-5").checked = true;
+        document.getElementById('option-2').style.display = 'none';
+        // document.label = document.label.replace('-', 'hi');
+    }
+</script>
 @endsection

@@ -13,7 +13,7 @@ class CreateOptionsTable extends Migration
 
             $table->longText('option_text');
 
-            $table->integer('points')->nullable();
+            $table->decimal('points', $precision = 8, $scale = 2)->nullable();
 
             $table->timestamps();
 

@@ -28,7 +28,7 @@
                 @foreach($result->questions as $question)
                     <tr>
                         <td>{{ $question->question_text }}</td>
-                        <td>{{ $question->pivot->points }}</td>
+                        <td>{{ $question->pivot->points/2 }}</td>
                     </tr>
                 @endforeach
             </tbody>

@@ -35,7 +35,7 @@
             </div>
             <div class="form-group">
                 <label for="points">{{ trans('cruds.option.fields.points') }}</label>
-                <input class="form-control {{ $errors->has('points') ? 'is-invalid' : '' }}" type="number" name="points" id="points" value="{{ old('points') }}" step="1">
+                <input class="form-control {{ $errors->has('points') ? 'is-invalid' : '' }}" type="number" name="points" id="points" value="{{ old('points') }}" step=".01">
                 @if($errors->has('points'))
                     <div class="invalid-feedback">
                         {{ $errors->first('points') }}

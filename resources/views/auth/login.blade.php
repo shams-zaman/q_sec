@@ -1,10 +1,13 @@
 @extends('layouts.app')
 @section('content')
 <div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card mx-4">
+    <div class="col-md-8">
+        <div class="card ">
             <div class="card-body p-4">
                 <h1>{{ trans('panel.site_title') }}</h1>
+                <a class="btn btn-primary px-0" href="{{ route('register') }}">
+                    {{ trans('নতুন পরীক্ষার্থী হলে রেজি: করুন') }}
+                </a>
 
                 <p class="text-muted">{{ trans('global.login') }}</p>
 
@@ -68,9 +71,7 @@
                                     {{ trans('global.forgot_password') }}
                                 </a><br>
                             @endif
-                            <a class="btn btn-link px-0" href="{{ route('register') }}">
-                                {{ trans('global.register') }}
-                            </a>
+                          
                         </div>
                     </div>
                 </form>
