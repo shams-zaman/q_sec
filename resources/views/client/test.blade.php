@@ -71,6 +71,8 @@
     window.onload=function(){
         document.getElementById("option-7").checked = true;
         document.getElementById("option-11").checked = true;
+        document.getElementById('option-7').style.display = 'none';
+        document.getElementById('option-11').style.display = 'none';
         document.getElementById("option-15").checked = true;
         document.getElementById("option-19").checked = true;
         document.getElementById("option-23").checked = true;
@@ -109,10 +111,9 @@
         document.getElementById("option-155").checked = true;
         document.getElementById("option-159").checked = true;
         document.getElementById("option-163").checked = true;
-        // document.getElementById("option-167").checked = true;
+        // // document.getElementById("option-167").checked = true;
        
-        document.getElementById('option-7').style.display = 'none';
-        document.getElementById('option-11').style.display = 'none';
+      
         document.getElementById('option-15').style.display = 'none';
         document.getElementById('option-19').style.display = 'none';
         document.getElementById('option-23').style.display = 'none';
@@ -151,12 +152,12 @@
         document.getElementById('option-155').style.display = 'none';
         document.getElementById('option-159').style.display = 'none';
         document.getElementById('option-163').style.display = 'none';
-        // document.getElementById('option-7').style.display = 'none';
-        // document.getElementById('option-11').style.display = 'none';
-        // document.getElementById('option-7').style.display = 'none';
-        // document.getElementById('option-11').style.display = 'none';
-        // document.getElementById('option-7').style.display = 'none';
-        // document.getElementById('option-11').style.display = 'none';
+        document.getElementById('option-7').style.display = 'none';
+        document.getElementById('option-11').style.display = 'none';
+        document.getElementById('option-7').style.display = 'none';
+        document.getElementById('option-11').style.display = 'none';
+        document.getElementById('option-7').style.display = 'none';
+        document.getElementById('option-11').style.display = 'none';
        
     }
 </script>
