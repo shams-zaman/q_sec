@@ -69,9 +69,9 @@
 </div>
 <script>
     window.onload=function(){
-        document.getElementById("option-2").checked = true;
-        document.getElementById("option-5").checked = true;
-        document.getElementById('option-2').style.display = 'none';
+        document.getElementById("option-7").checked = true;
+        document.getElementById("option-11").checked = true;
+        document.getElementById('option-15').style.display = 'none';
         // document.label = document.label.replace('-', 'hi');
     }
 </script>
