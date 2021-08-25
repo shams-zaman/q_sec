@@ -14,8 +14,7 @@ class CategoriesTableSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        foreach(range(1,5) as $id)
-        {
+        foreach (range(1, 5) as $id) {
             Category::insert([
                 'id' => $id,
                 'name' => $faker->sentence(3)

@@ -12,9 +12,9 @@ class DatabaseSeeder extends Seeder
             PermissionRoleTableSeeder::class,
             UsersTableSeeder::class,
             RoleUserTableSeeder::class,
-            CategoriesTableSeeder::class,
-            QuestionsTableSeeder::class,
-            OptionsTableSeeder::class,
+            // CategoriesTableSeeder::class,
+            // QuestionsTableSeeder::class,
+            // OptionsTableSeeder::class,
         ]);
     }
 }
