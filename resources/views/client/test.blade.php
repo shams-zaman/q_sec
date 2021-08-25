@@ -71,9 +71,9 @@
     window.onload=function(){
         document.getElementById("option-7").checked = true;
         document.getElementById("option-11").checked = true;
-        // document.getElementById('option-11').style.display = 'none';
-        // document.getElementById('option-7').style.display = 'none';
-        // document.label = document.label.replace('-', 'hi');
+        document.getElementById('option-11').style.display = 'none';
+        document.getElementById('option-7').style.display = 'none';
+       
     }
 </script>
 @endsection
